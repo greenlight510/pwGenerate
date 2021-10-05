@@ -1,6 +1,5 @@
 // Generator Code
 var charString = ["~!@#$%^&*()-_=+", "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklnmopqrstuvwxyz"];
-var uInput = [];
 var password = "";
 var generateBtn = document.querySelector("#generate");
 
@@ -26,6 +25,7 @@ function writePassword() {
 
 // Character length prompt
 function generatePassword() {
+    var uInput = [];
     var characterLength = 0
     while ((characterLength < 8 || characterLength > 256) || Number.isInteger(characterLength) === false) {
         characterLength = parseInt(prompt("How many characters would you like your password to be? (8-256)"));
@@ -69,7 +69,7 @@ function generatePassword() {
     if (lower) {
         uInput.push(charString[3])
     }
-
+console.log(uInput)
     var password = "";
 
   //Single Array 
