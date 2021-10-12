@@ -25,7 +25,7 @@ function writePassword() {
 
 // Character length prompt
 function generatePassword() {
-    var uInput = [];
+    var uInput = [],
     var characterLength = 0
     while ((characterLength < 8 || characterLength > 256) || Number.isInteger(characterLength) === false) {
         characterLength = parseInt(prompt("How many characters would you like your password to be? (8-256)"));
